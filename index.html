@@ -1,0 +1,121 @@
+<html>
+    <head>
+        <!--  Link tags  -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <!--  Links Awesome fonts  -->
+        <link rel="stylesheet" href="./css/index.css" />  <!--  Links CSS file  -->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">  <!--  Links Bootstrap  -->
+
+        <!--  Meta Tags  -->
+        <meta charset="utf-8" >
+        <meta name="description" content="******" >
+        <meta name="author"      content="started web developing since Sep. 2022." >
+        <meta name="keywords"    content="farbod, yekta, Farbod Yekta, Web developer, slider" > 
+        <meta name="viewport"    content="width=device-width, initial-scale=1">
+
+        <!--  Script tags  -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"   integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script> <!--  JavaS cript -->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script> <!--  Bootstrap  -->
+        <script src="./js/index.js"></script>  <!--  Links JavaScript file  -->
+        
+        <title> 
+            Slider Presentation
+        </title>
+    </head>
+    <body>
+        <a  href="#"> <!-- LOGO link -->
+            <img id="logo" src="./images/clay-folks_logo.png" height="80px" width="80px" alt="Plz try refresing!" title="Clay-Folks" /> 
+        </a>
+
+        <i id="manu_icon" class="fa fa-bars"></i> <!-- hamburger menu icon -->
+
+        <div id="slider">
+            
+            <input type="hidden" id="1" img="./images/snow_leopard.jpeg"/>
+            <input type="hidden" id="2" img="./images/red_panda.jpeg"/>
+            <input type="hidden" id="3" img="./images/asian_elephants.jpeg"/>
+
+        </div>
+
+        <div id="picture">
+            <img id="img" src="./images/snow_leopard.jpeg" width="700" height="350" style="opacity: 100%;"/> 
+        </div>
+
+        <div id="title"> <!-- text related to each picture appears here -->  
+            <!--  <article class="article"> Extremely Endangered </article>  -->
+            <div class="article" id="c0">
+                <h3> 
+                    Extremely Endangered 
+                </h3>
+            </div>
+
+            <span class="circle" order="1" style="left:25%;"> 
+                <i class='fa fa-square'></i> <!-- filled circle / color added in JS (line 122) -->
+            </span>
+            <span class="circle" order="2" style="left:35%;">
+                <i class="fa fa-circle"></i>
+            </span>
+            <span class="circle" order="3" style="left:45%;">
+                <i class="fa fa-circle"></i>
+            </span> 
+
+            <!-- slider arrows -->
+            <span id="left_arrow">
+                <i class="fa fa-caret-left"></i>
+            </span>
+            <span id="right_arrow">
+                <i class="fa fa-caret-right"></i>
+            </span>
+            
+        </div> 
+
+        <div id="bar_content" >
+            
+        </div>
+
+        <div id="data" style="display: none;"> <!-- changes with every background using JavaScript -->
+            
+            <!-- text boxes on the right -->
+            <div class="bar" id="b1"> <!-- Snow Leopard -->  <!-- 1 -->
+                <i style="font-size: xx-large;" class="fa fa-quote-left"></i> 
+                <p>Although the "snow leopard" recently had its status changed by IUCN 
+                from Endangered to Vulnerable, snow leopard populations may still 
+                be dwindling across parts of their range. Poaching, both for its 
+                skin and for traditional medicine, is a growing threat. </p>
+            </div>
+            <div class="article" id="c1">
+                <h3> 
+                    Extremely Endangered 
+                </h3>
+            </div>
+
+            <div class="bar" id="b2"> <!-- Red Panda --> <!-- 2 -->
+                <p> "Red pandas" are endangered and are legally protected in India, 
+                Bhutan, China, Nepal and Myanmar. Their primary threats are 
+                habitat loss and degradation, human interference and poaching. 
+                Researchers believe that the total population of red pandas 
+                has declined by 40 percent over the past two decades. </p>
+                
+            </div>
+            <article class="article" id="c2">
+                <h3>Endangered</h3>
+            </article>
+
+            <div class="bar" id="b3"> <!-- Asian Elephants --> <!-- 3 -->
+                <p> The greatest threats to "Asian elephants" are habitat loss, 
+                fragmentation, and degradation; illegal killing (e.g. for 
+                their ivory and other products or in retaliation for 
+                human-elephant conflicts); and the loss of genetic viability 
+                resulting from small population size and isolation. </p>
+                
+            </div>
+            <article class="article" id="c3">
+                <h3>almost extinct!</h3>
+            </article>
+
+        </div>
+
+        
+
+    </body>
+</html>

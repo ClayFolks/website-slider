@@ -1,0 +1,227 @@
+/* Slider Presentation */
+@font-face {
+    font-family: fredericka;
+    src: url(../fonts/Fredericka.ttf);
+}
+@font-face {
+    font-family: The_Barista;
+    src: url(../fonts/The_Barista.ttf);
+}
+
+#slider{
+    width: 100%; 
+    height: 600px;
+    background-image: url(../images/snow_leopard.jpeg); /* blurred */
+    background-position: center center;
+    background-repeat: no-repeat; 
+    background-size: 82% 95%;
+    padding:50px;
+    filter: blur(8px);
+    -webkit-filter: blur(5px);
+    /*border: solid thick black;*/
+    z-index: 5;
+}
+#logo { /* a tag */
+    /* logo size defined inline */
+    top: 30px;
+    left: 10%;
+    cursor: pointer;
+    position: absolute;
+    color: white;
+    font-size: x-large;
+    background-color: transparent;
+    z-index: 20;
+    
+}
+#logo:hover {
+    /*border: solid thin cyan;*/
+    box-shadow: 4px 6px 8px 0px #888888;
+
+}
+#manu_icon {
+    font-size: 3em;
+    position: absolute;
+    right: 11%;
+    top: 5%;
+    z-index: 20;
+    cursor: pointer;
+    
+}
+#manu_icon:hover {
+    color:cadetblue;
+    text-shadow: 3px 3px 3px cyan;
+
+}
+#title {
+    background-color: white;
+    color: black;
+    width: auto;
+    height: 150px;
+    top: 250px;
+    left: 15px;
+    position: absolute;
+    padding: 30px;
+    font-size: x-large;
+    font-family: fredericka;
+    box-shadow: 0px 6px 8px 0px #888888;
+    /*border: solid thin black;*/
+}
+@media only screen and (min-width: 200px) and (max-width:1100px) {
+    #title {
+        width: 28%;
+        height: 170px;
+        top: 30%;
+        left: 70%;
+        position: fixed;
+        border-right: solid thin black;
+        border-left: solid thin black;
+        padding: 20px;
+    }
+    #title .article h3 {
+        font-size: smaller;
+    }
+}
+#title div {
+    animation: fadeIn 0.8s 0.4s ease forwards;
+    -webkit-animation: fadeIn 0.8s 0.4s ease forwards;
+}
+.circle {
+    color: lavender;
+    cursor: pointer;
+    font-size: 15px;
+    position: absolute;
+    bottom: 17%;
+    left: 20%;
+    margin-left: 10%;
+}
+.circle:hover{
+    font-size: 20px;
+    color: slategrey;
+    transition: ease-in-out 0.6s; 
+    -webkit-transition: ease-in-out 0.6s; 
+}
+@media only screen and (min-width: 200px) and (max-width:1100px) {
+    .circle{
+        bottom: 10%;
+        left: 20%;
+    }
+}
+#left_arrow {
+    font-size: 1.7em;
+    color: lavender;
+    opacity: 0.8;
+    position: relative;
+    bottom: 15%;
+    left: 12%;
+    cursor: pointer;
+}
+#left_arrow:hover {
+    color: slategrey;
+    transition: ease-in-out 0.6s; 
+    -webkit-transition: ease-in-out 0.6s; 
+}
+@media only screen and (min-width: 200px) and (max-width:1100px) {
+    #left_arrow {
+        font-size: xx-large;
+        top: 20%;
+        position: absolute;
+    }
+    #left_arrow i {
+        position: relative;
+        top: 80%;
+    }
+}
+#right_arrow {
+    font-size: 1.7em;
+    color: lavender;
+    opacity: 0.8;
+    position: relative;
+    bottom: 15%;
+    left: 63%;
+    cursor: pointer;
+} 
+#right_arrow:hover {
+    color: slategrey;
+    transition: ease-in-out 0.6s; 
+    -webkit-transition: ease-in-out 0.6s; 
+}
+@media only screen and (min-width: 200px) and (max-width:1100px) {
+    #right_arrow {
+        font-size: xx-large;
+        top: 20%;
+        position: absolute;
+        left: 80%;
+    }
+    #right_arrow i {
+        position: relative;
+        top: 80%;
+        
+    }
+}
+#picture {
+    width: 900px;
+    height: 450px;
+    top: -500px;
+    left: 180px;
+    box-shadow: none;
+    display: flex;
+    padding: 15px;
+    position: relative;
+}
+#picture img:hover {
+    transition: ease-in-out 0.6s; 
+    -webkit-transition: ease-in-out 0.6s; 
+    box-shadow: 5px 6px 8px 5px #888888;
+} 
+@media only screen and (min-width: 200px) and (max-width:1100px) {
+    #picture {
+        width: 40%;
+        left: 1%;
+        transition: ease-in-out 0.6s; 
+        -webkit-transition: ease-in-out 0.6s; 
+    }
+}
+#bar_content {
+    width: 25%;
+    height: 350px;
+    top: 17%;
+    left: 72%;
+    padding: 15px;
+    color: black;
+    position: absolute;
+    text-align: justify;
+    padding-left: 30px;
+    padding-right: 30px;
+    font-family: The_Barista;
+    background-color: white;
+    border-top: solid thin black; 
+    border-bottom: solid thin black;
+    transition: 1.2s;
+    -webkit-transition: 1.2s;
+}
+.bar {
+    top: 35%;
+    left: 72%;
+    padding: 10px;
+    color: black;
+}
+.bar_content:hover {
+    border-top: none; 
+    border-bottom: none;
+    border-left: solid thin black; 
+    border-right: solid thin black;
+}
+@media only screen and (min-width: 200px) and (max-width:1100px) {
+    #bar_content {
+        width: 98.5%;
+        height: auto;
+        top: 50%;
+        left: 1%;
+        position: fixed;
+        border-left: none; 
+        border-right: none; 
+        border-top: solid thin black;
+        border-bottom: solid thin black;
+        z-index: 15;
+    }
+}
